@@ -1,0 +1,33 @@
+.register-form {
+  max-width: 55rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.submit-btn {
+  margin-block: 1rem;
+  padding: 0.5rem;
+  font-size: 17px;
+  max-width: 15rem;
+}
+
+.error-text {
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fa0b0b;
+  background-color: #ffe8e8;
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .inputs {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}

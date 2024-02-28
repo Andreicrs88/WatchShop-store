@@ -1,0 +1,46 @@
+.confirm-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.confirm-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 1em;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+  z-index: 20000;
+
+  & svg {
+    font-size: 70px;
+    color: #10bd6c;
+  }
+}
+
+.title {
+  color: var(--dark-color-1);
+}
+
+.description {
+  margin-block: 1em 2em;
+  color: var(--dark-color-4);
+}
+
+.close-btn {
+  width: 50%;
+  padding-block: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  background-color: #10bd6c;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #19d47d;
+  }
+}

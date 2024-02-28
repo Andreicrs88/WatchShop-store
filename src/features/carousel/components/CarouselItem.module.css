@@ -1,0 +1,106 @@
+.carousel-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100vw;
+  max-width: 1100px;
+  height: 100%;
+
+  & img {
+    height: auto;
+    width: 100vw;
+    max-width: 1100px;
+  }
+}
+
+.offer-text {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+  white-space: normal;
+  text-align: right;
+}
+
+.offer-title {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.offer-description {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* responsive layout properties */
+@media (min-width: 400px) {
+  .carousel-item img {
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel-item img {
+    transform: scale(0.6);
+  }
+
+  .offer-title {
+    font-size: 22px;
+  }
+
+  .offer-description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) {
+  .carousel-item img {
+    transform: scale(0.55);
+  }
+
+  .offer-text {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    transform: scale(0.6);
+  }
+
+  .offer-text {
+    width: 35%;
+    padding: 1rem;
+  }
+
+  .offer-title {
+    font-size: 27px;
+  }
+
+  .offer-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .carousel-item img {
+    transform: scale(0.55);
+  }
+
+  .offer-title {
+    font-size: 29px;
+  }
+
+  .offer-description {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,25 @@
+.badge {
+  position: absolute;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  top: -7px;
+  left: -5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+  font-weight: 600;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #cf3f50, #fe2d34);
+  color: #fff;
+}
+
+/* responsive layout properties  */
+@media (min-width: 768px) {
+  .badge {
+    width: 20px;
+    height: 20px;
+    font-size: 90%;
+  }
+}

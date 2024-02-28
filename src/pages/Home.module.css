@@ -1,0 +1,144 @@
+.home-container {
+  position: relative;
+}
+
+.home-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+  background-color: var(--dark-color-1);
+  background-image: url("../assets/images/cover-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.summary {
+  padding-block: 0.5rem;
+  padding-inline: 0.7rem;
+  text-align: center;
+  border-radius: 14px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+
+  & h1 {
+    color: var(--accent-color-3);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 33px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #000;
+  }
+
+  & p {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    text-shadow: 1px 1px #3e3e3e;
+  }
+}
+
+.offers-title {
+  margin-block: 3rem 1rem;
+  font-size: 24px;
+  text-align: center;
+  color: var(--dark-color-1);
+}
+
+/* responsive layout properties  */
+@media (min-width: 400px) {
+  .summary {
+    width: 90%;
+  }
+}
+
+@media (min-width: 480px) {
+  .home-banner {
+    padding: 1rem;
+  }
+
+  .summary p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 500px) {
+  .summary {
+    width: 80%;
+
+    & h1 {
+      font-size: 36px;
+    }
+  }
+
+  .offers-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-banner {
+    padding: 1.5rem;
+  }
+
+  .home-container {
+    height: auto;
+  }
+
+  .summary {
+    width: 60%;
+
+    & h1 {
+      margin-bottom: 1.2rem;
+      font-size: 40px;
+    }
+
+    & p {
+      margin-bottom: 2rem;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home-banner {
+    justify-content: flex-end;
+    background-image: url("../assets/images/cover-large.jpg");
+    background-position: center;
+    background-color: #fff;
+    background-blend-mode: normal;
+  }
+
+  .summary {
+    width: 50%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: right;
+    margin-right: 1rem;
+    color: var(--dark-color-1);
+
+    & h1 {
+      font-size: 45px;
+      color: var(--accent-color-1);
+    }
+
+    & p {
+      text-shadow: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .summary {
+    width: 45%;
+    text-align: right;
+    margin-right: 2rem;
+  }
+}

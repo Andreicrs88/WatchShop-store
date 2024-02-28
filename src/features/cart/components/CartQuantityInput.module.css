@@ -1,0 +1,38 @@
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & button {
+    width: 26px;
+    height: 26px;
+    font-size: 1.3rem;
+    background-color: var(--light-color-4);
+    border: none;
+    border-radius: 50%;
+    color: var(--accent-color-1);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent-color-1);
+      background-color: var(--light-color-1);
+    }
+  }
+}
+
+.value {
+  width: 10%;
+  margin-inline: 0.5rem;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  color: var(--dark-color-1);
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .value {
+    font-size: 16px;
+    width: 20%;
+  }
+}

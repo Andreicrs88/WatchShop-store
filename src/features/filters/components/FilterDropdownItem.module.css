@@ -1,0 +1,33 @@
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 13rem;
+  margin-bottom: 0.5rem;
+  padding: 10px 10px 20px 15px;
+  border: 1px solid var(--light-color-2);
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow:
+    0 5px 10px var(--shadow-color),
+    0 -5px 10px var(--shadow-color);
+}
+
+.filter-icon {
+  font-size: 15px;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--dark-color-1);
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .filter-box {
+    border: none;
+  }
+}

@@ -1,0 +1,30 @@
+.fav-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 50;
+
+  &:hover {
+    color: var(--accent-color-1);
+  }
+}
+
+.fav-btn-full {
+  color: rgb(222, 56, 56);
+
+  &:hover {
+    color: rgb(222, 56, 56);
+  }
+}
+
+/* responsive layout properties */
+@media (max-width: 400px) {
+  .fav-btn {
+    padding-block: 0.5rem;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,130 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 18.5rem;
+}
+
+.inputs {
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+
+  & label {
+    text-align: start;
+    margin-bottom: 0.2rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--dark-color-1);
+  }
+
+  & input {
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--light-color-1);
+    color: var(--accent-color-1);
+
+    &:focus {
+      background-color: #eff3f6;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #999;
+      font-weight: 300;
+    }
+  }
+}
+
+.input {
+  background-color: var(--light-color-1);
+  color: var(--accent-color-1);
+
+  &:focus {
+    background-color: #eff3f6;
+    outline: none;
+  }
+}
+
+.input.invalid {
+  background-color: #f1cfcf;
+  animation: vertical-shake 0.3s;
+}
+
+.form-field .warning-text {
+  margin-top: 0.2rem;
+  color: #e84141;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.login-form .status-text {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fa0b0b;
+  background-color: #ffe8e8;
+}
+
+.actions {
+  width: 100%;
+  max-width: 15rem;
+}
+
+.actions button {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+@keyframes vertical-shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* responsive layout properties */
+@media (max-width: 600px) {
+  .login-form {
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .inputs {
+    width: unset;
+    max-width: 50%;
+  }
+
+  .login-form {
+    align-items: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form {
+    min-height: 18.5rem;
+  }
+}

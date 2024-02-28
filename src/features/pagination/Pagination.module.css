@@ -1,0 +1,74 @@
+.pages {
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.page-btn,
+.navigate-btn {
+  display: grid;
+  place-items: center;
+  margin-inline: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--dark-color-2);
+  background-color: var(--light-color-4);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color-1);
+    color: #fff;
+  }
+}
+
+.page-btn.active {
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--accent-color-1);
+  pointer-events: none;
+}
+
+.navigate-btn {
+  padding-inline: 0.3rem;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--dark-color-1);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  color: #c9d4f2;
+  cursor: default;
+
+  &:hover {
+    color: #c9d4f2;
+  }
+}
+
+.dots {
+  pointer-events: none;
+  font-size: 16px;
+  cursor: default;
+
+  &:hover {
+    color: #6c8fad;
+  }
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .pages {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .pages {
+    margin-left: 0;
+  }
+}

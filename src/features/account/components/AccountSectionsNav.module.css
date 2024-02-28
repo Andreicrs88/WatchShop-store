@@ -1,0 +1,56 @@
+.link {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+
+  & svg {
+    font-size: 16px;
+    margin-right: 0.6rem;
+  }
+
+  &:hover {
+    color: var(--dark-color-1);
+  }
+
+  &:hover a {
+    color: #fff;
+  }
+}
+
+.link.active {
+  background-color: var(--accent-color-1);
+  color: #fff;
+}
+
+.link-btn {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 0.5rem auto;
+  padding-block: 0.3em;
+  border-radius: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: var(--dark-color-1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color-2);
+    color: #fff;
+  }
+}
+
+/* responsive layout properties */
+@media (450px < width < 768px) {
+  .link-btn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .link-btn {
+    width: 60%;
+  }
+}

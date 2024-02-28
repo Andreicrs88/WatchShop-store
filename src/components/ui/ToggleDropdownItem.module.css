@@ -1,0 +1,45 @@
+.dropdown-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.expand-content {
+  overflow-y: auto;
+}
+
+.margin {
+  margin-top: 0.5rem;
+}
+
+/* custom scroll bar */
+/* width */
+.expand-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.expand-content::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+/* track */
+.expand-content::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+/* handle */
+.expand-content::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 3px;
+  background-color: rgb(159, 159, 159);
+}
+
+.expand-content::-webkit-scrollbar-thumb:hover {
+  background-color: #c2c2c2;
+}

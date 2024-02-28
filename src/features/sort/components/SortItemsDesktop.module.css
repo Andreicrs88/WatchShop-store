@@ -1,0 +1,46 @@
+.sort-wrapper-desktop {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-top: 0.4rem;
+  gap: 0.5rem;
+
+  & span {
+    font-size: 15px;
+    color: var(--dark-color-1);
+  }
+}
+
+/*responsive layout properties*/
+@media (min-width: 768px) {
+  .sort-wrapper-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 850px) {
+  .sort-wrapper-desktop {
+    flex-direction: row;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sort-wrapper-desktop {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sort-wrapper-desktop {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sort-wrapper-desktop {
+    margin-right: 4rem;
+  }
+}

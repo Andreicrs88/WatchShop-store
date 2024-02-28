@@ -1,0 +1,61 @@
+.account-section {
+  display: flex;
+  cursor: pointer;
+}
+
+.navigation-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--dark-color-1);
+
+  &:hover {
+    color: var(--accent-color-1);
+  }
+
+  & a {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark-color-1);
+    font-size: 15.5px;
+
+    &:hover {
+      color: var(--accent-color-1);
+    }
+  }
+}
+
+.dropdown-arrow {
+  position: relative;
+  margin-left: 0.1rem;
+  top: 4px;
+}
+
+.account-section-text {
+  display: none;
+}
+
+.user-icons {
+  font-size: 24px;
+  margin-right: 0.2rem;
+  color: var(--accent-color-1);
+}
+
+/* responsive layout properties */
+@media (min-width: 400px) {
+  .user-icons {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 960px) {
+  .account-section-text {
+    display: inline;
+  }
+
+  .user-section {
+    flex-grow: 1;
+  }
+}

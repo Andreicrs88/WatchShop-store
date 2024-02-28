@@ -1,0 +1,134 @@
+.register-form {
+  margin-top: 2rem;
+  min-height: 28rem;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  padding: 0;
+
+  & label {
+    text-align: start;
+    margin-bottom: 0.2rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--dark-color-1);
+  }
+
+  & input,
+  select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--light-color-1);
+    color: var(--accent-color-1);
+
+    &:focus {
+      background-color: #eff3f6;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #999;
+      font-weight: 300;
+    }
+  }
+
+  & select {
+    cursor: pointer;
+  }
+}
+
+.input {
+  background-color: var(--light-color-1);
+  color: var(--accent-color-1);
+
+  &:focus {
+    background-color: #eff3f6;
+    outline: none;
+  }
+}
+
+.input.invalid {
+  background-color: #f1cfcf;
+  animation: vertical-shake 0.3s;
+}
+
+.form-field .warning-text {
+  margin-top: 0.2rem;
+  color: #e84141;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.register-form .status-text {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fa0b0b;
+  background-color: #ffe8e8;
+}
+
+.actions button {
+  display: block;
+  margin: 0.5rem auto;
+  width: 60%;
+}
+
+@keyframes vertical-shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* responsive layout properties */
+@media (min-width: 480px) {
+  .actions button {
+    display: block;
+    margin-inline: 0;
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-field {
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 2rem;
+  }
+}

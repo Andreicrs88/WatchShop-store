@@ -1,0 +1,64 @@
+.filters-wrapper {
+  padding: 0.4rem;
+
+  & h3 {
+    margin-bottom: 0.6rem;
+    margin-left: 0.8rem;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.reset-filters-btn {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  background-color: var(--accent-color-1);
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color-2);
+  }
+}
+
+.selected-filters-container {
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--dark-color-1);
+  border: 1px solid var(--accent-color-2);
+}
+
+.selected-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--dark-color-2);
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: var(--dark-color-4);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent-color-1);
+    }
+  }
+
+  & div span:nth-child(2) {
+    color: var(--dark-color-1);
+  }
+}

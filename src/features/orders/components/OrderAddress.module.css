@@ -1,0 +1,32 @@
+.address-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  margin-left: 0.3rem;
+  font-size: 16px;
+
+  & span:first-child {
+    width: 100%;
+    max-width: 20rem;
+    font-weight: 600;
+    color: var(--dark-color-1);
+  }
+
+  & span:nth-child(2) {
+    font-size: 16px;
+    color: var(--dark-color-1);
+  }
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .address-row {
+    flex-direction: row;
+    margin-left: unset;
+
+    & span:first-child {
+      width: 30%;
+    }
+  }
+}

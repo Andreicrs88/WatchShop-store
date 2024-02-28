@@ -1,0 +1,23 @@
+.actions {
+  margin-block: 1rem;
+
+  & button {
+    margin-right: 1rem;
+  }
+}
+
+.error-text {
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fa0b0b;
+  background-color: #ffe8e8;
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .account-data-form {
+    max-width: 30rem;
+  }
+}

@@ -1,0 +1,13 @@
+.orders-list {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+/* responsive layout properties */
+@media (min-width: 992px) {
+  .orders-list {
+    max-width: 50rem;
+  }
+}

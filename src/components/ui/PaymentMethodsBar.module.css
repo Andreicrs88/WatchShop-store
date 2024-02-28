@@ -1,0 +1,30 @@
+.payment-icons-list {
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  list-style-type: none;
+  background: transparent;
+}
+
+.payment-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.89);
+
+  & img {
+    height: fit-content;
+    width: 30px;
+    scale: 1.3;
+  }
+}
+
+/* responsive layout properties  */
+@media (min-width: 480px) {
+  .payment-icons-list {
+    display: flex;
+  }
+}

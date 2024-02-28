@@ -1,0 +1,34 @@
+.favorites-title {
+  margin-block: 0.3rem 1rem;
+  font-size: 19px;
+  color: var(--accent-color-1);
+}
+
+.fallback-text {
+  margin-top: 2rem;
+  font-size: 16px;
+  color: var(--dark-color-1);
+}
+
+.status-text {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fa0b0b;
+  background-color: #ffe8e8;
+}
+
+/* responsive layout properties */
+@media (min-width: 768px) {
+  .favorites-title {
+    margin-block: 0.3rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .favorites-title {
+    font-size: 22px;
+  }
+}

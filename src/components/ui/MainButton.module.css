@@ -1,0 +1,27 @@
+.btn {
+  width: 100%;
+  padding-block: 0.3rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: var(--accent-color-1);
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color-2);
+  }
+}
+
+.btn:disabled {
+  background-image: linear-gradient(#e2e2e2, #ddd);
+  color: #888;
+  pointer-events: none;
+}
+
+/* responsive layout properties */
+@media (min-width: 480px) {
+  .btn {
+    padding-block: 0.5rem;
+  }
+}

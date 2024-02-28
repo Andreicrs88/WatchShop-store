@@ -1,0 +1,24 @@
+.confirm-modal {
+  position: fixed;
+  top: 15vh;
+  right: 0;
+  width: 16rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  font-size: 14px;
+  background-color: var(--accent-color-1);
+  color: #fff;
+
+  z-index: 1000;
+
+  & svg {
+    margin-inline: 0.3rem 0.5rem;
+    font-size: 28px;
+    color: #fff;
+  }
+}

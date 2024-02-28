@@ -1,0 +1,32 @@
+.expandable {
+  padding-block: 1rem;
+  border-radius: 2px;
+
+  & li {
+    margin-top: 0.5rem;
+  }
+}
+
+.field {
+  font-size: 15.5px;
+  display: flex;
+  padding: 0.4rem;
+  border-radius: 3px;
+
+  & div:first-child {
+    font-weight: 500;
+    width: 50%;
+  }
+
+  & div:last-child {
+    width: 50%;
+  }
+}
+
+.field:nth-child(2n) {
+  background-color: var(--light-color-6);
+}
+
+.field:last-child {
+  border-bottom: none;
+}

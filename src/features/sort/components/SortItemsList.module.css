@@ -1,0 +1,11 @@
+.sort-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .sort-items-container {
+    flex-direction: row;
+  }
+}

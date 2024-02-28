@@ -1,0 +1,170 @@
+.page-title {
+  margin: 0.8rem;
+  font-size: 26px;
+  color: var(--dark-color-1);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.8rem;
+  box-shadow: 0 0 10px var(--light-color-3);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.top-section {
+  width: 100%;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-field {
+  width: 100%;
+  padding: 0.5rem;
+
+  & p {
+    margin-top: 0.5rem;
+    color: var(--dark-color-1);
+    font-size: 16px;
+  }
+}
+
+.field-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-color-1);
+
+  & svg {
+    margin-right: 0.5rem;
+    font-size: 17px;
+    color: var(--accent-color-1);
+  }
+}
+
+.social-media-container {
+  margin-block: 2rem 3rem;
+}
+
+.contact-social-media {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--dark-color-2);
+  background-color: var(--light-color-6);
+  color: var(--dark-color-2);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--accent-color-1);
+    border-color: var(--accent-color-1);
+  }
+}
+
+.sub-title {
+  margin-block: 2rem 1rem;
+  color: var(--dark-color-1);
+  font-size: 22px;
+}
+
+.form-container {
+  max-width: 35rem;
+}
+
+.form-container > span {
+  color: red;
+}
+
+.bottom-section {
+  margin: 0;
+  height: 30vh;
+  min-height: 25rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 80%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  outline: 2px solid var(--light-color-3);
+  border-radius: 3px;
+}
+
+/* responsive layout properties */
+@media (min-width: 480px) {
+  .page-title {
+    margin-inline: 1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .contact-wrapper {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    margin-inline: 1.5rem;
+  }
+
+  .contact-wrapper {
+    margin-inline: 1.5rem;
+  }
+
+  .field-title {
+    font-size: 17px;
+  }
+
+  .contact-field p {
+    font-size: 16px;
+  }
+
+  .top-section {
+    padding: 1rem;
+  }
+
+  .bottom-section {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  .map-container {
+    height: 85%;
+  }
+
+  .sub-title {
+    margin-top: 1rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact-info-container {
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+}

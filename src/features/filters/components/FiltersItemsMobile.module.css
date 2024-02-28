@@ -1,0 +1,41 @@
+.filter-items-list-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 1000;
+  overflow-y: scroll;
+
+  & h3 {
+    margin-block: 1rem;
+    font-size: 22px;
+    color: var(--dark-color-1);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+  color: var(--dark-color-1);
+}
+
+.apply-btn {
+  width: 30%;
+  min-width: 150px;
+  margin-top: 1.5rem;
+  padding-block: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--accent-color-1);
+  font-size: 16px;
+  color: #fff;
+}

@@ -1,0 +1,18 @@
+.orders-title {
+  margin-top: 0.3rem;
+  font-size: 19px;
+  color: var(--accent-color-1);
+}
+
+.fallback-text {
+  margin-top: 2rem;
+  font-size: 16px;
+  color: var(--dark-color-1);
+}
+
+/* responsive layout properties */
+@media (min-width: 992px) {
+  .orders-title {
+    font-size: 22px;
+  }
+}
