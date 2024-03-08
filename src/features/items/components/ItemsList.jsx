@@ -1,4 +1,5 @@
 // utils
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 // components
@@ -11,10 +12,21 @@ import styles from "./ItemsList.module.css";
 
 function ItemsList({ items, itemsType, categoryAllItems, searchTerm, sortedItems }) {
   const activePage = useSelector((state) => state.activePage.activePage);
+  const [itemsPerPage, setItemsPerPage] = useState(8);
 
-  // change the number of items per page depending on viewport size
-  const width = window.innerWidth;
-  const itemsPerPage = width < 900 ? 8 : 9;
+  useEffect(() => {
+    function handleResize() {
+      // change the number of items per page depending on viewport size
+      const width = window.innerWidth;
+      const itemsPerPage = width < 900 ? 8 : 9;
+      setItemsPerPage(itemsPerPage);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const lastItemIndex = activePage * itemsPerPage; // item on the end index is not included in the returned slice of the slice method
   // ex: fourth page -> lastItemIndex = 4(page number) * 6(items per page) = 24
