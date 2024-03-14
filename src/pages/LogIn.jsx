@@ -1,5 +1,6 @@
 // utils
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // components
 import LogInForm from "components/forms/LoginForm";
@@ -36,9 +37,15 @@ function LogIn() {
             <p>Add items to favorites</p>
           </li>
         </ul>
-        <div className={styles["link-btn"]}>
+        <motion.div
+          whileHover={{
+            scale: 0.93,
+            transition: { duration: 0.15, type: "spring", stiffness: 800 },
+          }}
+          className={styles["link-btn"]}
+        >
           <Link to="/register-user">Create account</Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
