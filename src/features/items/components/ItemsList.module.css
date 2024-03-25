@@ -6,8 +6,9 @@
 }
 
 .fallback-text {
-  margin-block: 1rem;
-  font-size: 16px;
+  margin-top: 3rem;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--dark-color-4);
 }
 

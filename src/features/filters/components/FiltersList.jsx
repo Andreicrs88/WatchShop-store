@@ -71,22 +71,28 @@ function FiltersList({ fetchedItems }) {
           ))}
       </div>
       <div className={styles["filters-container"]}>
-        <FilterDropdownItem
-          filterCategoryItems={filterBrandItems}
-          filterCategory="brand"
-        />
+        {filterBrandItems.length !== 0 && (
+          <FilterDropdownItem
+            filterCategoryItems={filterBrandItems}
+            filterCategory="brand"
+          />
+        )}
         <FilterDropdownItem
           filterCategoryItems={filterPriceData}
           filterCategory="price"
         />
-        <FilterDropdownItem
-          filterCategoryItems={filterMaterialItems}
-          filterCategory="material"
-        />
-        <FilterDropdownItem
-          filterCategoryItems={filterColorItems}
-          filterCategory="color"
-        />
+        {filterMaterialItems.length !== 0 && (
+          <FilterDropdownItem
+            filterCategoryItems={filterMaterialItems}
+            filterCategory="material"
+          />
+        )}
+        {filterColorItems.length !== 0 && (
+          <FilterDropdownItem
+            filterCategoryItems={filterColorItems}
+            filterCategory="color"
+          />
+        )}
       </div>
     </aside>
   );

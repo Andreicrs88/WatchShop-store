@@ -2,9 +2,10 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: transparent;
+  padding-block: 0.4rem !important;
   border: none;
   font-size: 22px;
+  background-color: transparent;
   cursor: pointer;
   z-index: 50;
 
@@ -26,5 +27,11 @@
   .fav-btn {
     padding-block: 0.5rem;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fav-btn {
+    padding-block: 0.5rem !important;
   }
 }

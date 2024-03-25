@@ -57,11 +57,13 @@ function ItemsList({ items, itemsType, categoryAllItems, searchTerm, sortedItems
           />
         ))}
       </ul>
-      <Pagination
-        totalItems={items}
-        itemsPerPage={itemsPerPage}
-        activePage={activePage}
-      />
+      {items.length !== 0 && (
+        <Pagination
+          totalItems={items}
+          itemsPerPage={itemsPerPage}
+          activePage={activePage}
+        />
+      )}
     </>
   );
 }

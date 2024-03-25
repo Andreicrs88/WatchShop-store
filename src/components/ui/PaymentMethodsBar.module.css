@@ -11,11 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 30px;
   width: 4rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.89);
 
   & img {
+    max-height: 100%;
     height: fit-content;
     width: 30px;
     scale: 1.3;
