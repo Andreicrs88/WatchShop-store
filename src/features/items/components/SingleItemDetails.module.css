@@ -116,7 +116,7 @@
 .actions {
   position: relative;
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem;
   flex-direction: column;
   justify-content: center;
   max-width: 15rem;
